@@ -1,0 +1,72 @@
+Started by user [8mha:////4NH2cGd0xf0r6nF0aKnzgyeEKMN7rH9sdcsiSlKR+xb4AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZh/dLi1CL94rzUjMTsgpTUsvyCYgAfnWvcyAAAAA==[0mSneha
+Running as SYSTEM
+Building remotely on [8mha:////4Cyoey6zwnsoB8jd4OvRGdYV+yajFX03aIaweqgzr2ZVAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eCcxLJUXZCRAGAePY7JAAAA[0mSlave-java in workspace /home/ubuntu/workspace/Slave-Java-Project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ubuntu/workspace/Slave-Java-Project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/snehakp0403/java.git # timeout=10
+Fetching upstream changes from https://github.com/snehakp0403/java.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/snehakp0403/java.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 20697e51e9c8eeca4f37c22973cd9743a681b22b (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 20697e51e9c8eeca4f37c22973cd9743a681b22b # timeout=10
+Commit message: "add java project"
+ > git rev-list --no-walk 20697e51e9c8eeca4f37c22973cd9743a681b22b # timeout=10
+[Slave-Java-Project] $ /bin/sh -xe /tmp/jenkins15285399326902907753.sh
++ cd /home/ubuntu/workspace/Slave-Java-Project
++ mvn package
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36mcom.mkyong.hashing:java-project[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding java-project 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mjava-project[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/workspace/Slave-Java-Project/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mjava-project[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/ubuntu/workspace/Slave-Java-Project/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mjava-project[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/ubuntu/workspace/Slave-Java-Project/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mjava-project[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/ubuntu/workspace/Slave-Java-Project/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mjava-project[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/ubuntu/workspace/Slave-Java-Project/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.mkyong.hashing.AppTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mjava-project[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/ubuntu/workspace/Slave-Java-Project/target/java-project-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-shade-plugin:3.2.0:shade[m [1m(default)[m @ [36mjava-project[0;1m ---[m
+[[1;34mINFO[m] Including commons-codec:commons-codec:jar:1.11 in the shaded jar.
+[[1;34mINFO[m] Replacing original artifact with shaded artifact.
+[[1;34mINFO[m] Replacing /home/ubuntu/workspace/Slave-Java-Project/target/java-project-1.0-SNAPSHOT.jar with /home/ubuntu/workspace/Slave-Java-Project/target/java-project-1.0-SNAPSHOT-shaded.jar
+[[1;34mINFO[m] Dependency-reduced POM written at: /home/ubuntu/workspace/Slave-Java-Project/dependency-reduced-pom.xml
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  3.941 s
+[[1;34mINFO[m] Finished at: 2025-03-06T17:56:13Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+Finished: SUCCESS

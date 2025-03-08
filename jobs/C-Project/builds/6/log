@@ -1,0 +1,23 @@
+Started by GitHub push by snehakp0403
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/C-Project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/C-Project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/snehakp0403/devops.git # timeout=10
+Fetching upstream changes from https://github.com/snehakp0403/devops.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/snehakp0403/devops.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 768877220988454f4ca8e912faeef8ecf7e3560e (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 768877220988454f4ca8e912faeef8ecf7e3560e # timeout=10
+Commit message: "Update test-webhook"
+ > git rev-list --no-walk cdde2d608f06c38b7a45b01cd58988364e1abcde # timeout=10
+[C-Project] $ /bin/sh -xe /tmp/jenkins1316596749501262591.sh
++ cd /var/lib/jenkins/workspace/C-Project/
++ make
+make: 'ABC.exe' is up to date.
+Finished: SUCCESS

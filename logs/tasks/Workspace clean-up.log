@@ -1,0 +1,6 @@
+Started at Thu Mar 06 14:29:12 UTC 2025
+Checking C-Project
+Deleting /home/ec2-user/workspace/C-Project on Slave-C
+Checking Slave-C-Project
+Deleting /var/lib/jenkins/workspace/Slave-C-Project on Jenkins
+Finished at Thu Mar 06 14:29:12 UTC 2025. 41ms

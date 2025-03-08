@@ -1,0 +1,23 @@
+Started by an SCM change
+Running as SYSTEM
+Building remotely on [8mha:////4MMeZBmiRcuVgQOfVKKXjuN2Mw9zJRMmYG+ieEQPjylpAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/eCcxLJUXWcAcXZlTMYAAAA=[0mSlave-C in workspace /home/ec2-user/workspace/Slave-C-Project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ec2-user/workspace/Slave-C-Project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/snehakp0403/devops.git # timeout=10
+Fetching upstream changes from https://github.com/snehakp0403/devops.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/snehakp0403/devops.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision d957bccae3909254010f68b6b788886ce0c0badd (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d957bccae3909254010f68b6b788886ce0c0badd # timeout=10
+Commit message: "Update test-webhook"
+ > git rev-list --no-walk b4982c96fd693604ef3b6e1404c7c1e1fe4acd22 # timeout=10
+[Slave-C-Project] $ /bin/sh -xe /tmp/jenkins17678449640054649498.sh
++ cd /home/ec2-user/workspace/Slave-C-Project
++ make
+make: 'ABC.exe' is up to date.
+Finished: SUCCESS
